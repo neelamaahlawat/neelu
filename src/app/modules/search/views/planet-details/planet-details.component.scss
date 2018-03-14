@@ -1,0 +1,26 @@
+.planet {
+    margin: auto;
+}
+.loader {
+    height: 100%;
+    width: 100%;
+    img {
+    display: block;
+    margin: 100px auto;
+    }
+  }
+  .go-back {
+    float: left;
+    width: 100px;
+  }
+  .pl-40{
+      padding-left: 40px; 
+  }
+  circle {
+    transition: stroke-opacity 1s, stroke-width 1s, transform 1s;
+    transform-origin: 50% 50%;
+   }
+  
+  circle:hover {
+    transform: scale(1.2);
+  }

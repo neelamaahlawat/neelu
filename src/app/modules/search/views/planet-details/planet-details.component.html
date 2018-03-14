@@ -1,0 +1,86 @@
+<div class="loader" *ngIf="loader">
+      <img src="assets/images/loader.gif" />
+</div>
+<div *ngIf="!loader">
+      <a class="btn btn-lg go-back" [routerLink]="['/planets']">
+            << Search Planets</a>
+                  <section class="jumbotron text-center">
+                        <div class="container">
+                              <h1 class="jumbotron-heading">Star Wars Planet - {{ planet.name }}</h1>
+                              <div class="planet">
+                                    <svg #svg height="300" width="300">
+                                          <circle #circle cx="150" cy="150" r="100" fill="green" />
+                                    </svg>
+                              </div>
+                        </div>
+                  </section>
+                  <section>
+                  <div class="container">
+                              <div class="row">
+                                    <div class="col-md-4">
+                                          <h5>Population</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.population}}</a>
+                                                </li>
+                                          </ul>
+                                          <h5>Created</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.created | date}}</a>
+                                                </li>
+                                          </ul>
+                                          <h5>Edited</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.edited | date}}</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                          <h5>Gravity</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.gravity}}</a>
+                                                </li>
+                                          </ul>
+                                          <h5>Rotation Period</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.rotation_period}}</a>
+                                                </li>
+                                          </ul>
+                                          <h5>Orbital Speed</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.orbital_period}}</a>
+                                                </li>
+                                          </ul>
+                                          <h5>Diameter</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.diameter}}</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                          <h5>Surface Water</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.surface_water}}</a>
+                                                </li>
+                                          </ul>
+                                          <h5>Terrain</h5>
+                                          <ul class="list-unstyled text-small">
+                                                <li>
+                                                      <a class="text-muted">{{planet.terrain}}</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+
+                              <hr>
+
+                        </div>
+                  </section>
+</div>

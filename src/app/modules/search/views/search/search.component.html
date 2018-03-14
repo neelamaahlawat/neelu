@@ -1,0 +1,22 @@
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Star Wars Planet Search.</h1>
+    <p class="lead text-muted">Search your favourite Planet data used in Star war Movies, and displaying planet according to its size.</p>
+    <p>
+      <app-search-box (loading)="loading = $event" (results)="updateResults($event)"></app-search-box>
+    </p>
+  </div>
+</section>
+<div class="album py-5 bg-light">
+  <div class="loader" *ngIf="loading">
+        <img  src="assets/images/loader.gif" />
+  </div>
+  <div class="container" *ngIf="!loading">
+    <div *ngIf="results.length==0">
+      No Planets found!!
+    </div>
+    <div class="row">
+        <app-search-result *ngFor="let result of results" [result]="result"> </app-search-result>
+    </div>
+  </div>
+</div>

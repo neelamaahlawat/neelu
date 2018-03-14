@@ -1,0 +1,22 @@
+  <div class="card mb-4 box-shadow">
+      <div class="planet">
+          <app-planet-circle [config] = "result"></app-planet-circle>
+      </div>
+      <div class="card-body">
+        <h3>{{result.name}}</h3>
+        <div class="planet-details">
+            <div class="chip blue lighten-4 selected">Climate: {{result.climate}}</div>
+            <div class="chip blue lighten-4 selected">Diameter: {{result.diameter}}</div>
+            <div class="chip blue lighten-4 selected">Gravity: {{result.gravity}}</div>
+            <div class="chip blue lighten-4 selected">Terrain: {{result.terrain}}</div>
+            <div class="chip blue lighten-4 selected">Water: {{result.surface_water}}</div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button  type="button" class="btn btn-secondary" (click) = "planetDetails()">View details »</button>
+          </div>
+          <small class="text-muted">Orbital Period: {{result.orbital_period}}</small>
+        </div>
+      </div>
+    </div>
+ 

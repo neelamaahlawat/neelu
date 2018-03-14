@@ -1,0 +1,8 @@
+  circle {
+    transition: stroke-opacity 1s, stroke-width 1s, transform 1s;
+    transform-origin: 50% 50%;
+   }
+  
+  circle:hover {
+    transform: scale(1.2);
+  }

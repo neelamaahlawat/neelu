@@ -1,0 +1,39 @@
+{
+  "userProfile" : {
+   "personalInfo" : {
+     "name" : "Shikha Sharma",
+     "email" : "email@gmail.com",
+     "mobile" : 1234567890,
+     "phoneNumber" : 0124-2345677,
+    "designation" : "Chief of Operations at Axis Bank Limited"
+   },
+   "organizationInfo" : {
+    "businessSegment" : "Financial Services",
+    "headOfficeAddress" : "Addresss",
+    "tanNumber" : 123456
+   },
+    "role" : {
+      "name" : "ADMIN"
+    }
+  },
+  "products" : {
+    "Data Connectivity" : {
+      "name" : "Data Connectivity",
+      "productType" : "data",
+      "totalConnections" : 134,
+      "totalBillableIDs" : 152,
+      "displayText" : "Party Numbers",
+      "openInvoices" : 24,
+      "totalAmountDue" : 3000
+    },
+    "Mobile Services" : {
+      "name" : "Mobile Services",
+      "productType" : "mobile",
+      "totalConnections" : 200,
+      "totalBillableIDs" : 285,
+      "displayText" : "Billable IDs",
+      "openInvoices" : 0,
+      "totalAmountDue" : 3000
+    }
+  }
+}
